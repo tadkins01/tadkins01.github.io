@@ -332,6 +332,108 @@
             color: var(--dark-bg);
         }
 
+        /* Resume Section */
+        .resume-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 3rem;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+
+        .resume-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 2rem;
+        }
+
+        .resume-name {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .resume-contact {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .resume-contact a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .resume-contact a:hover {
+            color: var(--accent-bright);
+        }
+
+        .resume-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .resume-section-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .resume-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .resume-item-title {
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .resume-item-subtitle {
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            font-size: 0.95rem;
+        }
+
+        .resume-item-meta {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .resume-item-description {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 0.5rem;
+        }
+
+        .resume-item-list {
+            color: var(--text-secondary);
+            margin-left: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .resume-item-list li {
+            margin-bottom: 0.4rem;
+        }
+
+        .skill-columns {
+            columns: 2;
+            column-gap: 2rem;
+        }
+
+        .skill-columns li {
+            margin-bottom: 0.6rem;
+            break-inside: avoid;
+        }
+
         /* Projects Section (Empty State) */
         .projects-grid {
             display: grid;
@@ -437,6 +539,7 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -565,6 +668,188 @@
                         <span class="skill-badge">IT Essentials</span>
                         <span class="skill-badge">CyberOps Assoc.</span>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume">
+            <h2>Resume</h2>
+            <div class="resume-container">
+                <div class="resume-header">
+                    <div class="resume-name">Thomas A. Adkins</div>
+                    <div class="resume-contact">
+                        Cypress, TX | <a href="https://github.com/tadkins01">GitHub: github.com/tadkins01</a>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <div class="resume-section-title">Technical Skills</div>
+                    
+                    <div class="resume-item">
+                        <div class="resume-item-title">Networking</div>
+                        <ul class="resume-item-list skill-columns">
+                            <li>VLAN configuration and network segmentation</li>
+                            <li>DHCP configuration and IP addressing</li>
+                            <li>Internal DNS and local domain configuration</li>
+                            <li>Cisco Catalyst switch configuration (Cisco IOS)</li>
+                            <li>Ubiquiti EdgeSwitch configuration</li>
+                            <li>OpenWRT router configuration</li>
+                            <li>Network troubleshooting and diagnostics</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-item-title">Operating Systems</div>
+                        <ul class="resume-item-list skill-columns">
+                            <li>Windows 10 / Windows 11</li>
+                            <li>macOS</li>
+                            <li>Linux (Ubuntu, Raspberry Pi OS)</li>
+                            <li>FreeBSD-based systems (OPNsense)</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-item-title">Other Skills</div>
+                        <ul class="resume-item-list skill-columns">
+                            <li>Desktop PC assembly and upgrades</li>
+                            <li>BIOS / firmware configuration</li>
+                            <li>Structured network cabling troubleshooting</li>
+                            <li>RJ45 Ethernet cable termination (T568A / T568B)</li>
+                            <li>Basic electronics soldering</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-item-title">Technologies & Platforms</div>
+                        <ul class="resume-item-list skill-columns">
+                            <li>Cisco IOS (Catalyst switching)</li>
+                            <li>OPNsense firewall platform</li>
+                            <li>OpenWRT router firmware</li>
+                            <li>SSH and serial console access via PuTTY</li>
+                            <li>Samba file sharing</li>
+                            <li>MySQL</li>
+                            <li>PowerShell</li>
+                            <li>Wireshark</li>
+                            <li>Python (primary language), basic Java and HTML</li>
+                            <li>Word, PowerPoint, Excel</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <div class="resume-section-title">Education</div>
+                    
+                    <div class="resume-item">
+                        <div class="resume-item-title">Lone Star College – Westway Park Technology Center</div>
+                        <div class="resume-item-subtitle">Associate of Applied Science (AAS) – Cybersecurity</div>
+                        <div class="resume-item-meta">Graduated: Fall 2024 | GPA: 4.0/4.0</div>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-item-title">Lone Star College – Westway Park Technology Center</div>
+                        <div class="resume-item-subtitle">Bachelor of Applied Technology (BAT) – Cybersecurity</div>
+                        <div class="resume-item-meta">Expected Graduation: Spring 2027</div>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <div class="resume-section-title">Certifications & Technical Coursework</div>
+                    <ul class="resume-item-list">
+                        <li>Cisco Networking Academy – CCNAv7: Introduction to Networks</li>
+                        <li>Cisco Networking Academy – CCNAv7: Switching, Routing, and Wireless Essentials</li>
+                        <li>Cisco Networking Academy – CCNAv7: Enterprise Networking, Security, and Automation</li>
+                        <li>IT Essentials – PC Hardware and Software</li>
+                        <li>CyberOps Associate</li>
+                    </ul>
+                </div>
+
+                <div class="resume-section">
+                    <div class="resume-section-title">Technical Projects</div>
+                    
+                    <div class="resume-item">
+                        <div class="resume-item-title">Home Lab Infrastructure</div>
+                        <ul class="resume-item-list">
+                            <li>Deployed OPNsense firewall on Protectli hardware to manage routing and network segmentation</li>
+                            <li>Configured Cisco Catalyst and Ubiquiti EdgeSwitch managed switches for VLAN segmentation and network isolation</li>
+                            <li>Configured internal DNS domains for segmented lab networks (labnet.home.arpa / outerlab.home.arpa)</li>
+                            <li>Implemented Samba file sharing between Windows and Linux systems</li>
+                            <li>Configured remote MySQL database connectivity across network subnets hosted on Raspberry Pi</li>
+                            <li>Managed systems using SSH and console port access</li>
+                            <li>Configured OpenWRT routers and wireless access points</li>
+                            <li>Built a router-hosted NAS using external SSD storage</li>
+                            <li>Terminated and tested Ethernet cabling using T568B wiring standard for custom cables</li>
+                            <li>Currently developing Pi-hole DNS filtering and implementing Tailscale VPN for secure remote access to lab infrastructure</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-item-title">Additive Manufacturing (3D Printing)</div>
+                        <div class="resume-item-description">Designed and printed functional FDM parts and performed troubleshooting and tuning of an Anycubic Kobra S1 printer</div>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-item-title">Building / Racing FPV Drones</div>
+                        <div class="resume-item-description">Designed, soldered, programmed, tuned, and piloted FPV racing drones including system troubleshooting</div>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <div class="resume-section-title">Work Experience</div>
+                    
+                    <div class="resume-item">
+                        <div class="resume-item-title">Event Operations Staff</div>
+                        <div class="resume-item-subtitle">Houston Events Services</div>
+                        <div class="resume-item-meta">Houston, TX</div>
+                        <ul class="resume-item-list">
+                            <li>Assisted management staff coordinating high-end private and corporate events</li>
+                            <li>Provided service support for high-profile clients including major law firms</li>
+                            <li>Maintained professional service standards in fast-paced environments</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-item-title">Shift Manager / Floor Staff</div>
+                        <div class="resume-item-subtitle">inSPIRE Rock Climbing Gym</div>
+                        <div class="resume-item-meta">Houston, TX</div>
+                        <ul class="resume-item-list">
+                            <li>Supervised staff and delegated responsibilities during shifts</li>
+                            <li>Ensured safety compliance for climbing operations</li>
+                            <li>Handled customer service issues and conflict resolution</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-item-title">Aquatics Specialist</div>
+                        <div class="resume-item-subtitle">PetSmart</div>
+                        <div class="resume-item-meta">Houston, TX</div>
+                        <ul class="resume-item-list">
+                            <li>Provided customer support across multiple departments including aquatics, cashier, stocking, and pet care, assisting customers with animal care guidance, aquarium setup, and water chemistry management</li>
+                            <li>Maintained multi-tank industrial aquarium systems including filtration and water chemistry</li>
+                            <li>Developed bacterial dosing plans to restore system balance after tank resets</li>
+                            <li>Created training videos explaining industrial sump filtration system mechanics</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-item-title">Customer Service Staff</div>
+                        <div class="resume-item-subtitle">Locatelli's Restaurant</div>
+                        <div class="resume-item-meta">Houston, TX</div>
+                        <ul class="resume-item-list">
+                            <li>Supported restaurant operations as a busser and server assistant in a high-volume dining environment</li>
+                            <li>Assisted with food preparation and kitchen support during peak service hours</li>
+                            <li>Maintained dining area organization, table turnover, and guest service standards</li>
+                            <li>Assisted with minor troubleshooting of printers and network equipment</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <div class="resume-section-title">Hobbies</div>
+                    <ul class="resume-item-list">
+                        <li>Rock climbing</li>
+                        <li>Mountain biking</li>
+                        <li>Electronics modification services</li>
+                    </ul>
                 </div>
             </div>
         </section>
